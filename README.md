@@ -1,11 +1,23 @@
-# Orbities
-Orbities: the universe of your focus.
+<h1 align="center">Orbities – the universe of your focus</h1>
+
+<p align="center">
+  <img src="assets/orbities-banner.png" alt="Orbities Banner" width="600">
+</p>
+
+
+<p align="center">
+  <a href="https://apps.apple.com/xxxxxx">
+    <img src="assets/app-store-badge.png" alt="Download on the App Store" height="60">
+  </a>
+</p>
 
 ## Autores
 
-- Eduardo (programação)  
-- Thales (programação)  
-- Taynara (design)
+<p align="center">
+  <a href="https://github.com/educcamara">Eduardo</a> (programação) &nbsp;•&nbsp;
+  <a href="https://github.com/thalesaraujods">Thales</a> (programação) &nbsp;•&nbsp;
+  <a href="https://github.com/naraarrt">Taynara</a> (design)
+</p> 
 
 ## Sobre
 
