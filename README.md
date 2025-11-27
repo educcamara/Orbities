@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <a href="https://apps.apple.com/xxxxxx">
+  <a href="https://apps.apple.com/br/app/orbities/id6753018099?l=en-GB">
     <img src="assets/app-store-badge.png" alt="Download on the App Store" height="60">
   </a>
 </p>
