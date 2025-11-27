@@ -11,8 +11,6 @@
   </a>
 </p>
 
-## Autores
-
 <p align="center">
   <a href="https://github.com/educcamara">Eduardo</a> (programação) &nbsp;•&nbsp;
   <a href="https://github.com/thalesaraujods">Thales</a> (programação) &nbsp;•&nbsp;
