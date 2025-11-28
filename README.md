@@ -13,93 +13,95 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/educcamara">Eduardo</a> (programação) &nbsp;•&nbsp;
-  <a href="https://github.com/thalesaraujods">Thales</a> (programação) &nbsp;•&nbsp;
+  <a href="https://github.com/educcamara">Eduardo</a> (programming) &nbsp;•&nbsp;
+  <a href="https://github.com/thalesaraujods">Thales</a> (programming) &nbsp;•&nbsp;
   <a href="https://github.com/naraarrt">Taynara</a> (design)
 </p> 
 
-## Sobre
+🇧🇷 [PT-BR Version](https://github.com/educcamara/Orbities/tree/pt-br)
 
-Vindo de um contexto universitário, nós víamos a dificuldade que nós e nossos amigos tínhamos em nos manter consistentes nos estudos, sendo muito afetados pela procrastinação. Com isso, estudamos as causas e consequências da procrastinação no contexto de estudantes universitários, buscando evitar a queda no desempenho acadêmico.
+## About
 
-Com isso, **Orbities** foi criado.
+Coming from a university context, we saw how difficult it was for us and our friends to stay consistent in our studies, heavily affected by procrastination. With that in mind, we studied the causes and consequences of procrastination in the context of university students, aiming to avoid a decline in academic performance.
 
-Orbities é um aplicativo feito (inicialmente) para iPad, onde, por meio do planejamento automático de sessões de estudo em grupo, esses estudantes conseguem tirar o peso de ter que se planejar do zero e trazer a motivação de estudar por meio da colaboração em grupo. Nosso app pode:
+With this, **Orbities** was created.
 
-- Registrar atividades, especificando do que se trata e definindo um prazo para finalizá-las
-- Fazer planejamento automático por meio de modelos de linguagem, onde, a partir da análise do título e da descrição da atividade, o app cria um planejamento de sessões de estudo, cada uma focada em um subtópico
-- Registrar questões para cada atividade
-- Permitir compartilhamento e colaboração entre amigos para realizarem e responderem às sessões juntos
-- Propor dinâmicas em que uma parte das questões é escolhida para que as pessoas discutam entre si
+Orbities is an app built (initially) for iPad, where, through automatic planning of group study sessions, these students can avoid the burden of planning everything from scratch and gain motivation to study through group collaboration. Our app can:
 
-Já em desenvolvimento:
-- Geração automática de questões dado o assunto
-- Atribuição de questões a sessões específicas
+- Register activities, specifying what they are about and defining a deadline to finish them
+- Automatically plan study sessions using language models, where, based on the title and description of the activity, the app creates a plan of study sessions, each focused on a subtopic
+- Register questions for each activity
+- Allow sharing and collaboration among friends so they can perform and answer the sessions together
+- Propose dynamics in which part of the questions is selected for people to discuss with each other
 
-## Tecnologias e Coisas
+Already in development:
+- Automatic question generation based on the subject
+- Assignment of questions to specific sessions
 
-- Aplicativo feito em **Swift**
-- Frontend modelado em **SwiftUI**
-- Persistência e sincronia com **CloudKit** para compartilhamento e atualização em tempo quase real com outros colaboradores
-- Utilização de APIs de LLMs como **Gemini** (Google) e **Foundation Models** (Apple)
-- **Combine** para partes que exigem um modelo mais reativo
-- Implementação simples de **Swift Macros** para automatizar a conversão de tipos para esquemas usados na API do Gemini
+## Technologies and Things
 
-- Arquitetura **Clean + MVVM**
-- Programação orientada a protocolos (para inversão de dependência)
-- Pipeline de **CI/CD** por meio do **Xcode Cloud**
-- **GitFlow** + **Conventional Commits** no fluxo de trabalho com Git
+- App built in **Swift**
+- Frontend modeled in **SwiftUI**
+- Persistence and sync with **CloudKit** for sharing and near real-time updates with other collaborators
+- Use of LLM APIs: **Gemini** (Google) and **Foundation Models** (Apple)
+- **Combine** for parts that require a more reactive model
+- Simple implementation of **Swift Macros** to automate converting types into schemas used in the Gemini API
 
-## Minhas Contribuições
+- **Clean + MVVM** architecture
+- Protocol-oriented programming (for dependency inversion)
+- **CI/CD** pipeline through **Xcode Cloud**
+- **GitFlow** + **Conventional Commits** in the Git workflow
 
-### MVVM no SwiftUI
+## My Contributions
 
-Responsável pela aplicação do padrão **MVVM** na camada de apresentação com SwiftUI, separando Views da lógica de negócio e garantindo que cada tela seja guiada por um ViewModel claro, com estados e efeitos bem definidos.
+### MVVM in SwiftUI
 
-### Arquitetura Clean
+Responsible for applying the **MVVM** pattern in the presentation layer with SwiftUI, separating Views from business logic and ensuring that each screen is guided by a clear ViewModel with well-defined states and effects.
 
-Modelagem e implementação (em equipe) da estruturação de arquivos e diretórios do projeto no Xcode, seguindo a arquitetura Clean. A motivação principal era ser capaz de modularizar com mais facilidade os módulos do aplicativo, conseguir realizar testes separadamente e implementar de forma mais simples a injeção de dependências na camada de frontend.
+### Clean Architecture
 
-### Pipeline do Xcode Cloud
+Modeling and implementing (as a team) the file and directory structure of the project in Xcode, following Clean Architecture. The main motivation was to modularize the app more easily, enable separate testing, and simplify dependency injection in the frontend layer.
 
-Implementação de um pipeline simples no **Xcode Cloud** para lidar com build, test e archive, além de envio ao TestFlight sempre que uma tag com o padrão `v*` é criada no repositório.
+### Xcode Cloud Pipeline
 
-Além disso, configuração e manutenção de scripts utilizados durante o pipeline por meio do diretório `ci_scripts`.
+Implementation of a simple **Xcode Cloud** pipeline to handle build, test and archive, as well as TestFlight submission whenever a tag following the `v*` pattern is created in the repository.
 
-### CloudKit no contexto da Clean
+Additionally, configuration and maintenance of scripts used during the pipeline through the `ci_scripts` directory.
 
-Implementação do serviço provedor de dados do **CloudKit** na camada externa da Clean Architecture, incluindo:
+### CloudKit in the Context of Clean
 
-- Criação de DTOs para conversão de objetos compatíveis com CloudKit para as entidades da camada mais interna do aplicativo (Domain Layer)
-- Implementação de um serviço de cache para guardar informações de escopo e registros do CloudKit, evitando perda de estado durante o uso do app
-- Implementação de **Subscriptions** para mudanças nos registros na nuvem por meio de `CKQuerySubscription` e `CKDatabaseSubscription`, permitindo:
-  - Lidar com notificações remotas para atualização em tempo (quase) real do estado do app
-  - Envio e tratamento de push notifications relacionadas a mudanças nos dados
+Implementation of the **CloudKit** data provider service in the external layer of the Clean Architecture, including:
 
-### Gemini API no contexto da Clean
+- Creation of DTOs to convert CloudKit-compatible objects into the entities of the innermost layer of the app (Domain Layer)
+- Implementation of a cache service to store scope information and CloudKit records, avoiding state loss during app usage
+- Implementation of **Subscriptions** for record changes in the cloud using `CKQuerySubscription` and `CKDatabaseSubscription`, enabling:
+  - Handling remote notifications to update the app state in (almost) real time
+  - Sending and processing push notifications related to data changes
 
-Da mesma forma que com o CloudKit, foi feita a abstração da lógica por meio de DTOs e protocolos (seguindo os princípios da Clean Architecture), com uma camada de comunicação direta por meio de uma entidade que encapsula a `URLSession` para se comunicar via HTTP com a API do Gemini.
+### Gemini API in the Context of Clean
+
+As with CloudKit, the logic was abstracted through DTOs and protocols (following the principles of Clean Architecture), with a direct communication layer through an entity that encapsulates `URLSession` to communicate with the Gemini API via HTTP.
 
 ### Swift Macros
 
-**Motivação:**  
-Um módulo do aplicativo necessitava que a API do Gemini retornasse um [output estruturado](https://ai.google.dev/gemini-api/docs/structured-output?example=recipe), onde seria necessário, para todo tipo com esse comportamento, definir manualmente uma estrutura no formato JSON-like.
+**Motivation:**  
+A module of the app required the Gemini API to return a [structured output](https://ai.google.dev/gemini-api/docs/structured-output?example=recipe), where it would be necessary, for every type with that behavior, to manually define a JSON-like structure.
 
-**Solução:**  
-Implementei um macro (`@GeminiResponseSchema`) que automaticamente cria uma propriedade computada contendo um `Dictionary<String, Any>` (estilo JSON) que descreve a estrutura do tipo, seguindo a documentação oficial da Gemini API.
+**Solution:**  
+I implemented a macro (`@GeminiResponseSchema`) that automatically creates a computed property containing a `Dictionary<String, Any>` (JSON-style) describing the type structure, following the official Gemini API documentation.
 
-### Coordenador de Requisições para Performance
+### Request Coordinator for Performance
 
-**Motivação:**  
-Várias telas na hierarquia de fluxo podem disparar a mesma requisição, o que poderia fazer com que o usuário, ao navegar para uma tela, executasse novamente a mesma chamada da tela anterior, além de gerar conflitos e redundância de requisições.
+**Motivation:**  
+Several screens in the flow hierarchy could trigger the same request, which could make the user, when navigating to a screen, execute the same call again from the previous screen, besides generating conflicts and redundant requests.
 
-**Solução:**  
-Criei o `FetchCoordinator`, uma entidade que coordena as tarefas em andamento, implementando políticas de concorrência como **coalesce** e **force refresh** e se integrando com o cache (`cache-else-fetch`, `stale-while-revalidate`), evitando requisições desnecessárias.
+**Solution:**  
+I created the `FetchCoordinator`, an entity that coordinates ongoing tasks, implementing concurrency policies such as **coalesce** and **force refresh**, and integrating with the cache (`cache-else-fetch`, `stale-while-revalidate`), avoiding unnecessary requests.
 
-### Arquitetura Pub/Sub para comunicação entre telas
+### Pub/Sub Architecture for Communication Between Screens
 
-**Motivação:**  
-Facilitar a atualização e a passagem de dados entre as telas na hierarquia de fluxo, além de lidar com o recebimento de notificações de atualizações vindas do CloudKit, para que a tela atualizasse discretamente sem acoplamento direto entre componentes.
+**Motivation:**  
+Facilitate updating and passing data between screens in the navigation flow, as well as handling update notifications coming from CloudKit, so the screen could update discreetly without direct coupling between components.
 
-**Solução:**  
-Criei um wrapper em cima do `NotificationCenter` para enviar e receber notificações específicas, onde cada notificação tem sua definição por meio do protocolo `EventNotification`, que define um payload padrão para aquele tipo de evento. Isso trouxe mais consistência e segurança de tipos em comparação com o uso direto do `NotificationCenter`.
+**Solution:**  
+I created a wrapper around `NotificationCenter` to send and receive specific notifications, where each notification has its definition through the `EventNotification` protocol, which defines a standard payload for that type of event. This brought more consistency and type safety compared to using `NotificationCenter` directly.
