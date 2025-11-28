@@ -1,4 +1,4 @@
-<h1 align="center">Orbities – the universe of your focus</h1>
+<h1 align="center">Orbities – o universo do seu foco</h1>
 
 <p align="center">
   <img src="assets/orbities-banner.png" alt="Orbities Banner" width="600">  
