@@ -8,7 +8,7 @@
   <a href="https://apps.apple.com/br/app/orbities/id6753018099?itscg=30200&itsct=apps_box_badge&mttnsubad=6753018099">
     <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/pt-br?releaseDate=1759881600"
          alt="Download on the App Store"
-         style="width: 245px; height: 82px; object-fit: contain;" />
+         style="width: 245px; height: 62px; object-fit: contain;" />
   </a>
 </p>
 
