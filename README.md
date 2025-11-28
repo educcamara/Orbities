@@ -2,12 +2,9 @@
 
 <p align="center">
   <img src="assets/orbities-banner.png" alt="Orbities Banner" width="600">
-</p>
 
-
-<p align="center">
-  <a href="https://apps.apple.com/br/app/orbities/id6753018099?l=en-GB">
-    <img src="assets/app-store-badge.png" alt="Download on the App Store" height="60">
+  <a href="https://apps.apple.com/br/app/orbities/id6753018099?itscg=30200&itsct=apps_box_badge&mttnsubad=6753018099" style="display: inline-block;">
+    <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/pt-br?releaseDate=1759881600" alt="Download on the App Store" style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
   </a>
 </p>
 
