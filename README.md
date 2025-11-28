@@ -1,6 +1,6 @@
 <h1 align="center">Orbities – the universe of your focus</h1>
 
-<p align="center" style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+<div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px;">
   <img src="assets/orbities-banner.png" alt="Orbities Banner" width="600">
 
   <a href="https://apps.apple.com/br/app/orbities/id6753018099?itscg=30200&itsct=apps_box_badge&mttnsubad=6753018099">
@@ -8,7 +8,7 @@
          alt="Download on the App Store"
          style="width: 245px; height: 82px; object-fit: contain;" />
   </a>
-</p>
+</div>
 
 <p align="center">
   <a href="https://github.com/educcamara">Eduardo</a> (programação) &nbsp;•&nbsp;
